@@ -12,7 +12,11 @@ public class DataType1 {
     // 메인함수.(코드 실행의 시작점.)
     public static void main(String[] args) {
         // 정수형 - 정수는 소수점 이하를 포함하지 않는 숫자.
-
+        byte byteBox; // 1바이트
+        short shortBox; // 2바이트
+        int intBox; // 4바이트 --> 정수형 데이터 타입의 기본타입.
+        long longBox; // 8바이트
+        // 컴퓨터는 데이터를 2진수로만 표현.
     }
 
 }
