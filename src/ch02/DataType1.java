@@ -12,11 +12,16 @@ public class DataType1 {
     // 메인함수.(코드 실행의 시작점.)
     public static void main(String[] args) {
         // 정수형 - 정수는 소수점 이하를 포함하지 않는 숫자.
-        byte byteBox; // 1바이트
-        short shortBox; // 2바이트
-        int intBox; // 4바이트 --> 정수형 데이터 타입의 기본타입.
-        long longBox; // 8바이트
+        byte byteBox; // 1바이트. -128 ~ 127.
+        short shortBox; // 2바이트 -32400 ~ 32400.
+        int intBox; // 4바이트 --> 정수형 데이터 타입의 기본타입. -21억 ~ 21억.
+        long longBox; // 8바이트. 약 9경까지 표현가능.
         // 컴퓨터는 데이터를 2진수로만 표현.
-    }
 
+        longBox = 9L; // long형은 L을 붙여 byte인지 int인지 short인지 long인지 구분.
+
+        // L value = R value -> 보통 오른쪽에 기술되는 수의 기본단위는 4바이트 크기인 int형으로 먼저 인지.
+        // long을 사용하고 싶다면 접미사L을 사용해야함.
+
+    }
 }

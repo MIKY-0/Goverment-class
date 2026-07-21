@@ -1,6 +1,6 @@
 package exercise;
 
-public class Exercise1 {
+public class Ex1 {
     // 메인함수. 코드실행의 시작점.
     public static void main(String[] args) {
 //        연습 문제
@@ -23,7 +23,6 @@ public class Exercise1 {
         t = a;
         a = b;
         b = t;
-
 
     }   // end of main
 } // end of class
