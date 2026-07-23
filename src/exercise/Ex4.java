@@ -36,5 +36,6 @@ public class Ex4 {
         // 7. num1과 num2 값 중 큰 수를 삼항 연산자를 사용해서 max 변수에 값을 담고 출력해주세요.
         int max = num1 < num2 ? num2 : num1;
         System.out.println("문제7 : " + max);
+
     } // end of main
 } // end of class
