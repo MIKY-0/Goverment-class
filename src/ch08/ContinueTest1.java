@@ -8,8 +8,5 @@ public class ContinueTest1 {
             if(i % 2 == 0) continue; //이번 반복은 건너뜀.
             System.out.println(i);
         }
-
-
-
     } // end of main
 } // end of class

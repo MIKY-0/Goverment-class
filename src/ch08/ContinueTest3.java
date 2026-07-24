@@ -8,17 +8,20 @@ public class ContinueTest3 {
         for(int i = 1; i <= 70; i++) {
             int last = i % 10;
             int m = i / 10;
-            boolean even = (m == 3 || m == 7 || m == 9) ? true : false;
-            boolean even3 = (last == 3 || last == 7 || last == 9) ? true : false;
 
-            if (even3) {
+            // 삼항연산자 안써도 되지만 변수에 담아보고자 활용.
+            boolean odd = (m == 3 || m == 7 || m == 9) ? true : false;
+            boolean even = (last == 3 || last == 7 || last == 9) ? true : false;
+
+            if (even) {
                 System.out.println("짝!");
                 continue;
             }
-            if(even) {
+            if(odd) {
                 System.out.println("짝!");
                 continue;
             }
+
             System.out.println(i);
         }
 
