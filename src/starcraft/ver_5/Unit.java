@@ -1,12 +1,14 @@
-package starcraft.ver_3_copy;
+package starcraft.ver_5;
 
-public class Unit {
+public class Unit implements WithTeam{
     protected String name;
     protected int power;
     protected int hp;
 
     // getter
-    public String getName() {return name;}
+    public String getName() {
+        return name;
+    }
 
     public int getPower() {
         return power;
@@ -16,16 +18,21 @@ public class Unit {
         return hp;
     }
 
+    // 동료맺기.(인터페이스)
+    @Override
+    public void TeamMate(Unit unit) {
+        System.out.println(this.name + "이 " + unit.getName() + "과(와) 동료가 됐습니다. ");
+    }
+
     // 공격
     public void attack(Unit unit) {
         if (this.hp <= 0) {
             System.out.println(name + "이(가) 사망하여 공격할 수 없습니다");
             return;
         }
-        System.out.println(name + "이(가)" +  "을 공격 합니다.");
-        beAttacked(this.power);
+        System.out.println(name + "이(가)" + unit.getName() + "을 공격 합니다.");
+        unit.beAttacked(this.power);
     }
-
 
     // 공격을 당했다.
     public void beAttacked(int power) {

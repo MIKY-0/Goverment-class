@@ -1,4 +1,4 @@
-package starcraft.ver_3_copy;
+package starcraft.ver_4;
 
 public class Unit {
     protected String name;
@@ -6,7 +6,9 @@ public class Unit {
     protected int hp;
 
     // getter
-    public String getName() {return name;}
+    public String getName() {
+        return name;
+    }
 
     public int getPower() {
         return power;
@@ -22,10 +24,9 @@ public class Unit {
             System.out.println(name + "이(가) 사망하여 공격할 수 없습니다");
             return;
         }
-        System.out.println(name + "이(가)" +  "을 공격 합니다.");
-        beAttacked(this.power);
+        System.out.println(name + "이(가)" + unit.getName() + "을 공격 합니다.");
+        unit.beAttacked(this.power);
     }
-
 
     // 공격을 당했다.
     public void beAttacked(int power) {

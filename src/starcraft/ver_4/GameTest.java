@@ -1,4 +1,4 @@
-package starcraft.ver_3_copy;
+package starcraft.ver_4;
 
 import java.util.Scanner;
 
@@ -22,9 +22,9 @@ public class GameTest {
         final int EXIT = 0; // 게임 종료
         final int RECHOOSE = 0; // 캐릭터 재선택
 
-        Unit z1 = new Zealot("질럿1");
-        Unit zg1 = new Zergling("저글링1");
-        Unit m1 = new Marine("마린1");
+        Zealot z1 = new Zealot("질럿1");
+        Zergling zg1 = new Zergling("저글링1");
+        Marine m1 = new Marine("마린1");
 
         System.out.println("★★★★★★★★★★★★스타크래프트 시작★★★★★★★★★★★★");
 
