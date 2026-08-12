@@ -27,6 +27,4 @@ public class Todo {
         }
         System.out.println("할 일 내용 : " + content + " , " + status);
     }
-
-
 }
