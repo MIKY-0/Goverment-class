@@ -29,6 +29,8 @@ public class FileServer {
         }
 
         System.out.println("파일 서버 시작 - 포트 : " + PORT);
+        System.out.println("파일 서버 시작 - 포트 : " + PORT);
+        System.out.println("");
 
         try (ServerSocket serverSocket = new ServerSocket(PORT)) {
             Socket socket = serverSocket.accept(); // 연결 될 때까지 이코드에서 블로킹 상태.
