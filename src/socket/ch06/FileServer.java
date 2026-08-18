@@ -29,7 +29,6 @@ public class FileServer {
         }
 
         System.out.println("파일 서버 시작 - 포트 : " + PORT);
-        System.out.println("파일 서버 시작 - 포트 : " + PORT);
         System.out.println("");
 
         try (ServerSocket serverSocket = new ServerSocket(PORT)) {
